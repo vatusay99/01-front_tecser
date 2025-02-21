@@ -1,0 +1,52 @@
+<div >
+  <div class="header-title">
+    <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+      Listado de:
+       </font></font><small class="text-body-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Productos</font></font></small>
+    </h3>
+    <button type="button" class="btn btn-primary" (click)="crearProduct()"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Crear Producto</font></font></button>
+  </div>
+
+  <hr>
+
+  <ul>
+    @for (item of productList; track $index) {
+      $index
+      <!-- <li>{{item.descripcion}}</li> -->
+
+    }
+
+  </ul>
+  <!-- <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ID</font></font></th>
+        <th scope="col"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cantidad</font></font></th>
+        <th scope="col"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nombre Producto</font></font></th>
+        <th scope="col"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Descripción</font></font></th>
+        <th scope="col"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Precio Venta</font></font></th>
+        <th scope="col"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Acciones</font></font></th>
+      </tr>
+    </thead>
+    <tbody>
+      <pre></pre>
+      @for (product of productList; track $index)
+      {
+        <tr class="table-active">
+          <th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{product.id}}</font></font></th>
+          <pre>{{product.descripcion}}</pre> -->
+          <!-- <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{product.cantidad}}</font></font></td>
+          <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{product.nombre_producto}}</font></font></td>
+          <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{product.descripcion}}</font></font></td> -->
+<!--
+          <td>
+            <button type="button" class="btn btn-outline-primary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Eliminar</font></font></button>
+
+            <button type="button" class="btn btn-outline-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Editar</font></font></button>
+          </td>
+        </tr>
+      }
+
+    </tbody>
+  </table> -->
+</div>
